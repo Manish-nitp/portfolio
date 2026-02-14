@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manish Kumar Yadav — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Favicons and meta for deployment can be added later -->
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#hero" class="logo">Manish<span class="accent">.</span></a>
+      <nav id="nav" class="nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="name">Manish Kumar Yadav</span></h1>
+        <p class="lead">Mechanical engineering student at NIT Patna — learning to code and build reliable systems.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#skills" class="btn btn-ghost">My skills</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <!-- Simple profile card: Replace or add an image if desired -->
+        <div class="profile-pic" aria-hidden="true">MK</div>
+        <div class="profile-info">
+          <h3>Student • NIT Patna</h3>
+          <p>Roll No: 2501055</p>
+          <p>Branch: Mechanical Engineering</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <main>
+    <section id="about" class="section container about">
+      <!-- Brief about me block -->
+      <h2>About Me</h2>
+      <p class="muted">I am a Mechanical Engineering student at NIT Patna with a growing interest in programming and system design. I focus on learning solid fundamentals and applying them to real problems.</p>
+      <div class="about-grid">
+        <div class="card">
+          <h3>Education</h3>
+          <p>NIT Patna — B.Tech, Mechanical Engineering</p>
+        </div>
+        <div class="card">
+          <h3>Roll Number</h3>
+          <p>2501055</p>
+        </div>
+        <div class="card">
+          <h3>Interests</h3>
+          <p>Problem solving, Embedded C, Systems thinking</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <p class="muted">Core skills and tools I work with.</p>
+      <div class="skills-grid">
+        <!-- Each skill is a card with a hover effect -->
+        <div class="skill-card">C Language</div>
+        <div class="skill-card">XYZ</div>
+        <div class="skill-card">Problem Solving</div>
+        <div class="skill-card">Teamwork</div>
+        <div class="skill-card">Quick Learner</div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container contact">
+      <h2>Contact</h2>
+      <p class="muted">Feel free to reach out — I'll usually reply by email.</p>
+
+      <!-- Contact card with mailto and optional social links -->
+      <div class="contact-grid">
+        <div class="card contact-card">
+          <h3>Send a message</h3>
+          <form id="contactForm">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Hi Manish, ..." required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+
+        <div class="card details">
+          <h3>Contact details</h3>
+          <p>Email: <a href="mailto:yadavman541526@gmail.com">yadavman541526@gmail.com</a></p>
+          <p>College: NIT Patna</p>
+          <p>Roll No: 2501055</p>
+
+          <div class="socials">
+            <!-- Replace # with your links when available -->
+            <a href="#" class="social">GitHub</a>
+            <a href="#" class="social">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Manish Kumar Yadav — Built with HTML, CSS & JavaScript</p>
+      <nav>
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
